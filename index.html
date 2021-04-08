@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="Heading">Calculator</h1>
+    <div class="calc__container">
+      <div class="blank_container"></div>
+      <div class="display_container">
+        <div class="display">0</div>
+      </div>
+      <div class="AC_container"><div class="AC">AC</div></div>
+      <div class="plus_minus_container"><div class="plus_minus">+/-</div></div>
+      <div class="percentage_container"><div class="percentage">%</div></div>
+
+      <div class="divide_container">
+        <div class="divide operator" data-active="false">&#247;</div>
+      </div>
+
+      <div class="seven_container">
+        <div class="numeric seven" data-value="7">7</div>
+      </div>
+      <div class="eight_container">
+        <div data-value="8" class="numeric eight">8</div>
+      </div>
+      <div class="nine_container">
+        <div data-value="9" class="numeric nine">9</div>
+      </div>
+      <div class="four_container">
+        <div data-value="4" class="numeric four">4</div>
+      </div>
+      <div class="five_container">
+        <div data-value="5" class="numeric five">5</div>
+      </div>
+      <div class="six_container">
+        <div data-value="6" class="numeric six">6</div>
+      </div>
+      <div class="one_container">
+        <div data-value="1" class="numeric one">1</div>
+      </div>
+      <div class="two_container">
+        <div data-value="2" class="numeric two">2</div>
+      </div>
+      <div class="three_container">
+        <div data-value="3" class="numeric three">3</div>
+      </div>
+      <div class="zero_container">
+        <div data-value="0" class="numeric zero">0</div>
+      </div>
+      <div class="dot_container"><div class="dot">.</div></div>
+      <div class="equal_container"><div class="equal">=</div></div>
+
+      <div class="multiply_container">
+        <div class="multiply operator" data-active="false">&#215;</div>
+      </div>
+
+      <div class="minus_container oep">
+        <div data-active="false" class="minus operator">-</div>
+      </div>
+      <div class="plus_container">
+        <div data-active="false" class="plus operator">+</div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>

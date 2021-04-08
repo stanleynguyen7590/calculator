@@ -1,0 +1,165 @@
+/* Reset CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Heading {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.calc__container {
+  width: 50vh;
+  height: 70vh;
+  background-color: #1c1c1c;
+  margin: 20px auto;
+  display: grid;
+  font-size: 1.5rem;
+  justify-items: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  column-gap: -2px;
+  grid-template-areas:
+    "blank blank blank blank"
+    "display display display display"
+    "AC plus_minus percentage divide"
+    "seven eight nine multiply"
+    "four five six minus"
+    "one two three plus"
+    "zero zero dot equal";
+}
+
+.blank_container {
+  grid-area: blank;
+}
+.display_container {
+  grid-area: display;
+
+  justify-self: end;
+}
+.AC_container {
+  grid-area: AC;
+}
+.plus_minus_container {
+  grid-area: plus_minus;
+}
+.percentage_container {
+  grid-area: percentage;
+}
+.divide_container {
+  grid-area: divide;
+}
+.seven_container {
+  grid-area: seven;
+}
+.eight_container {
+  grid-area: eight;
+}
+.nine_container {
+  grid-area: nine;
+}
+.four_container {
+  grid-area: four;
+}
+.five_container {
+  grid-area: five;
+}
+.six_container {
+  grid-area: six;
+}
+.one_container {
+  grid-area: one;
+}
+.two_container {
+  grid-area: two;
+}
+.three_container {
+  grid-area: three;
+}
+.zero_container {
+  grid-area: zero;
+}
+.dot_container {
+  grid-area: dot;
+}
+.equal_container {
+  grid-area: equal;
+}
+.multiply_container {
+  grid-area: multiply;
+}
+.minus_container {
+  grid-area: minus;
+}
+.plus_container {
+  grid-area: plus;
+}
+
+.display {
+  background-color: #1c1c1c;
+  color: #fff;
+  text-align: end;
+  padding-right: 1rem;
+  font-size: 2rem;
+}
+.AC,
+.plus_minus,
+.percentage {
+  background-color: #d4d4d2;
+  color: black;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4rem;
+}
+
+.divide,
+.multiply,
+.minus,
+.plus,
+.equal {
+  background-color: #ff9500;
+  color: #fff;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4rem;
+}
+
+.seven,
+.eight,
+.nine,
+.four,
+.five,
+.six,
+.one,
+.two,
+.three,
+.dot {
+  background-color: #505050;
+  color: #fff;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4rem;
+}
+.zero {
+  background-color: #505050;
+  color: #fff;
+  width: 8rem;
+  height: 4rem;
+  border-radius: 2rem;
+  text-align: start;
+  padding-left: 1.5rem;
+  line-height: 4rem;
+}
